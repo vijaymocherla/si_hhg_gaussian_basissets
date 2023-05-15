@@ -1,0 +1,670 @@
+  Threads set to 8 by Python driver.
+
+  Memory set to 195.578 GiB by Python driver.
+   => Loading Basis Set <=
+
+    Name: MYBASIS
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1 entry LI         line    74 inputblock allatoms 
+
+
+Scratch directory: /data1/vijay/jcp_helium_paper/hhg/li_plus_aqz_cisd_crt/
+
+*** tstart() called on mediawiki.tifrh.res.in
+*** at Mon Dec 19 14:56:53 2022
+
+   => Loading Basis Set <=
+
+    Name: MYBASIS
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1 entry LI         line    74 inputblock allatoms 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        8 Threads, 200271 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Geometry (in Angstrom), charge = 1, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         LI           0.000000000000     0.000000000000     0.000000000000     7.016003436600
+
+  Running in c1 symmetry.
+
+  Rotational constants: A = ************  B = ************  C = ************ [cm^-1]
+  Rotational constants: A = ************  B = ************  C = ************ [MHz]
+  Nuclear repulsion =    0.000000000000000
+
+  Charge       = 1
+  Multiplicity = 1
+  Electrons    = 2
+  Nalpha       = 1
+  Nbeta        = 1
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DIRECT.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is CORE.
+  Energy threshold   = 1.00e-12
+  Density threshold  = 1.00e-10
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: MYBASIS
+    Blend: ALLATOMS
+    Number of shells: 20
+    Number of basis functions: 105
+    Number of Cartesian functions: 105
+    Spherical Harmonics?: false
+    Max angular momentum: 4
+
+   => Loading Basis Set <=
+
+    Name: (USERDEF AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1 entry LI         line    54 file /home/vijay/.conda/envs/intel/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  Starting with a DF guess...
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.008 GiB; user supplied 146.683 GiB. Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               8
+    Memory [MiB]:            150203
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (USERDEF AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 17
+    Number of basis functions: 60
+    Number of Cartesian functions: 60
+    Spherical Harmonics?: false
+    Max angular momentum: 3
+
+  Minimum eigenvalue in the overlap matrix is 1.3213033580E-08.
+  Reciprocal condition number of the overlap matrix is 1.1053907716E-09.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Core (One-Electron) Hamiltonian.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A        105     105       1       1       1       0
+   -------------------------------------------------------
+    Total     105     105       1       1       1       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   1:    -7.12735803481391   -7.12736e+00   7.55429e-03 ADIIS/DIIS
+   @DF-RHF iter   2:    -7.23562885001576   -1.08271e-01   4.83674e-04 ADIIS/DIIS
+   @DF-RHF iter   3:    -7.23638255137048   -7.53701e-04   4.25465e-05 DIIS
+   @DF-RHF iter   4:    -7.23638737979875   -4.82843e-06   1.17115e-06 DIIS
+   @DF-RHF iter   5:    -7.23638738536675   -5.56800e-09   3.28007e-08 DIIS
+   @DF-RHF iter   6:    -7.23638738536993   -3.17701e-12   1.12750e-09 DIIS
+   @DF-RHF iter   7:    -7.23638738537012   -1.91847e-13   1.74664e-11 DIIS
+
+  DF guess converged.
+
+  ==> DirectJK: Integral-Direct J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           8
+    Screening Type:           CSAM
+    Screening Cutoff:        1E-12
+    Incremental Fock:           No
+
+   @RHF iter   8:    -7.23638633055139   -7.23639e+00   5.85608e-07 DIIS
+   @RHF iter   9:    -7.23638633083059   -2.79203e-10   2.87790e-08 DIIS
+   @RHF iter  10:    -7.23638633083151   -9.16600e-13   9.45974e-10 DIIS
+   @RHF iter  11:    -7.23638633083125    2.61124e-13   3.65516e-11 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A     -2.792365  
+
+    Virtual:                                                              
+
+       2A     -0.196304     3A     -0.128627     4A     -0.128627  
+       5A     -0.128627     6A     -0.073756     7A     -0.056696  
+       8A     -0.056696     9A     -0.056696    10A     -0.048090  
+      11A     -0.048090    12A     -0.048090    13A     -0.048090  
+      14A     -0.048090    15A     -0.029825    16A     -0.017384  
+      17A     -0.017384    18A     -0.017384    19A      0.046863  
+      20A      0.046863    21A      0.046863    22A      0.046863  
+      23A      0.046863    24A      0.054730    25A      0.054730  
+      26A      0.054730    27A      0.054730    28A      0.054730  
+      29A      0.054730    30A      0.054730    31A      0.055660  
+      32A      0.073973    33A      0.073973    34A      0.073973  
+      35A      0.218350    36A      0.231688    37A      0.231688  
+      38A      0.231688    39A      0.231688    40A      0.231688  
+      41A      0.260485    42A      0.260485    43A      0.260485  
+      44A      0.340250    45A      0.340250    46A      0.340250  
+      47A      0.340250    48A      0.340250    49A      0.340250  
+      50A      0.340250    51A      0.340250    52A      0.340250  
+      53A      0.357475    54A      0.357475    55A      0.357475  
+      56A      0.357475    57A      0.357475    58A      0.357475  
+      59A      0.357475    60A      0.478303    61A      0.543231  
+      62A      0.543231    63A      0.543231    64A      0.543231  
+      65A      0.543231    66A      0.590423    67A      0.590423  
+      68A      0.590423    69A      0.829153    70A      0.891759  
+      71A      1.033489    72A      1.033489    73A      1.033489  
+      74A      1.033489    75A      1.033489    76A      1.061421  
+      77A      1.061421    78A      1.061421    79A      1.061421  
+      80A      1.061421    81A      1.061421    82A      1.061421  
+      83A      1.189849    84A      1.189849    85A      1.189849  
+      86A      1.189849    87A      1.189849    88A      1.189849  
+      89A      1.189849    90A      1.189849    91A      1.189849  
+      92A      1.255991    93A      1.255991    94A      1.255991  
+      95A      1.540261    96A      1.880643    97A      1.880643  
+      98A      1.880643    99A      1.880643   100A      1.880643  
+     101A      3.107811   102A      3.683237   103A      3.683237  
+     104A      3.683237   105A     12.820857  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [     1 ]
+    NA   [     1 ]
+    NB   [     1 ]
+
+  @RHF Final Energy:    -7.23638633083125
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              0.0000000000000000
+    One-Electron Energy =                  -8.8880423893582421
+    Two-Electron Energy =                   1.6516560585269957
+    Total Energy =                         -7.2363863308312464
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0000000            0.0000000           -0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :         -0.0000000            0.0000000           -0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on mediawiki.tifrh.res.in at Mon Dec 19 14:56:57 2022
+Module time:
+	user time   =      17.32 seconds =       0.29 minutes
+	system time =       1.27 seconds =       0.02 minutes
+	total time  =          4 seconds =       0.07 minutes
+Total time:
+	user time   =      17.32 seconds =       0.29 minutes
+	system time =       1.27 seconds =       0.02 minutes
+	total time  =          4 seconds =       0.07 minutes
+
+Scratch directory: /data1/vijay/jcp_helium_paper/hhg/li_plus_aqz_cisd_crt/
+
+*** tstart() called on mediawiki.tifrh.res.in
+*** at Mon Dec 19 14:58:58 2022
+
+   => Loading Basis Set <=
+
+    Name: MYBASIS
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1 entry LI         line    74 inputblock allatoms 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        8 Threads, 200271 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Geometry (in Angstrom), charge = 1, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         LI           0.000000000000     0.000000000000     0.000000000000     7.016003436600
+
+  Running in c1 symmetry.
+
+  Rotational constants: A = ************  B = ************  C = ************ [cm^-1]
+  Rotational constants: A = ************  B = ************  C = ************ [MHz]
+  Nuclear repulsion =    0.000000000000000
+
+  Charge       = 1
+  Multiplicity = 1
+  Electrons    = 2
+  Nalpha       = 1
+  Nbeta        = 1
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DIRECT.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is CORE.
+  Energy threshold   = 1.00e-12
+  Density threshold  = 1.00e-10
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: MYBASIS
+    Blend: ALLATOMS
+    Number of shells: 20
+    Number of basis functions: 105
+    Number of Cartesian functions: 105
+    Spherical Harmonics?: false
+    Max angular momentum: 4
+
+   => Loading Basis Set <=
+
+    Name: (USERDEF AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1 entry LI         line    54 file /home/vijay/.conda/envs/intel/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  Starting with a DF guess...
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.008 GiB; user supplied 146.683 GiB. Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               8
+    Memory [MiB]:            150203
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       0.0000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (USERDEF AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 17
+    Number of basis functions: 60
+    Number of Cartesian functions: 60
+    Spherical Harmonics?: false
+    Max angular momentum: 3
+
+  Minimum eigenvalue in the overlap matrix is 1.3213037002E-08.
+  Reciprocal condition number of the overlap matrix is 1.1053910579E-09.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Core (One-Electron) Hamiltonian.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A        105     105       1       1       1       0
+   -------------------------------------------------------
+    Total     105     105       1       1       1       0
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter   1:    -7.12735803472416   -7.12736e+00   7.55429e-03 ADIIS/DIIS
+   @DF-RHF iter   2:    -7.23562884998408   -1.08271e-01   4.83675e-04 ADIIS/DIIS
+   @DF-RHF iter   3:    -7.23638255137079   -7.53701e-04   4.25465e-05 DIIS
+   @DF-RHF iter   4:    -7.23638737979904   -4.82843e-06   1.17115e-06 DIIS
+   @DF-RHF iter   5:    -7.23638738536706   -5.56802e-09   3.28000e-08 DIIS
+   @DF-RHF iter   6:    -7.23638738537014   -3.08109e-12   1.12739e-09 DIIS
+   @DF-RHF iter   7:    -7.23638738537015   -1.42109e-14   1.80160e-11 DIIS
+
+  DF guess converged.
+
+  ==> DirectJK: Integral-Direct J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Integrals threads:           8
+    Screening Type:           CSAM
+    Screening Cutoff:        1E-12
+    Incremental Fock:           No
+
+   @RHF iter   8:    -7.23638633055206   -7.23639e+00   5.85609e-07 DIIS
+   @RHF iter   9:    -7.23638633083118   -2.79112e-10   2.87793e-08 DIIS
+   @RHF iter  10:    -7.23638633083205   -8.79297e-13   9.45568e-10 DIIS
+   @RHF iter  11:    -7.23638633083198    7.01661e-14   3.65678e-11 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A     -2.792365  
+
+    Virtual:                                                              
+
+       2A     -0.196304     3A     -0.128627     4A     -0.128627  
+       5A     -0.128627     6A     -0.073756     7A     -0.056696  
+       8A     -0.056696     9A     -0.056696    10A     -0.048090  
+      11A     -0.048090    12A     -0.048090    13A     -0.048090  
+      14A     -0.048090    15A     -0.029825    16A     -0.017384  
+      17A     -0.017384    18A     -0.017384    19A      0.046863  
+      20A      0.046863    21A      0.046863    22A      0.046863  
+      23A      0.046863    24A      0.054730    25A      0.054730  
+      26A      0.054730    27A      0.054730    28A      0.054730  
+      29A      0.054730    30A      0.054730    31A      0.055660  
+      32A      0.073973    33A      0.073973    34A      0.073973  
+      35A      0.218350    36A      0.231688    37A      0.231688  
+      38A      0.231688    39A      0.231688    40A      0.231688  
+      41A      0.260485    42A      0.260485    43A      0.260485  
+      44A      0.340250    45A      0.340250    46A      0.340250  
+      47A      0.340250    48A      0.340250    49A      0.340250  
+      50A      0.340250    51A      0.340250    52A      0.340250  
+      53A      0.357475    54A      0.357475    55A      0.357475  
+      56A      0.357475    57A      0.357475    58A      0.357475  
+      59A      0.357475    60A      0.478303    61A      0.543231  
+      62A      0.543231    63A      0.543231    64A      0.543231  
+      65A      0.543231    66A      0.590423    67A      0.590423  
+      68A      0.590423    69A      0.829153    70A      0.891759  
+      71A      1.033489    72A      1.033489    73A      1.033489  
+      74A      1.033489    75A      1.033489    76A      1.061421  
+      77A      1.061421    78A      1.061421    79A      1.061421  
+      80A      1.061421    81A      1.061421    82A      1.061421  
+      83A      1.189849    84A      1.189849    85A      1.189849  
+      86A      1.189849    87A      1.189849    88A      1.189849  
+      89A      1.189849    90A      1.189849    91A      1.189849  
+      92A      1.255991    93A      1.255991    94A      1.255991  
+      95A      1.540261    96A      1.880643    97A      1.880643  
+      98A      1.880643    99A      1.880643   100A      1.880643  
+     101A      3.107811   102A      3.683237   103A      3.683237  
+     104A      3.683237   105A     12.820857  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [     1 ]
+    NA   [     1 ]
+    NB   [     1 ]
+
+  @RHF Final Energy:    -7.23638633083198
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              0.0000000000000000
+    One-Electron Energy =                  -8.8880423893450597
+    Two-Electron Energy =                   1.6516560585130760
+    Total Energy =                         -7.2363863308319836
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :         -0.0000000            0.0000000           -0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on mediawiki.tifrh.res.in at Mon Dec 19 14:59:02 2022
+Module time:
+	user time   =      15.00 seconds =       0.25 minutes
+	system time =       1.04 seconds =       0.02 minutes
+	total time  =          4 seconds =       0.07 minutes
+Total time:
+	user time   =      51.04 seconds =       0.85 minutes
+	system time =       9.56 seconds =       0.16 minutes
+	total time  =        129 seconds =       2.15 minutes
+ MINTS: Wrapper to libmints.
+   by Justin Turney
+
+   Calculation information:
+      Number of threads:                 8
+      Number of atoms:                   1
+      Number of AO shells:              20
+      Number of SO shells:              20
+      Number of primitives:             47
+      Number of atomic orbitals:       105
+      Number of basis functions:       105
+
+      Number of irreps:                  1
+      Integral cutoff                 1.00e-12
+      Number of functions per irrep: [ 105 ]
+
+ OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
+         stored in file 35.
+
+      Computing two-electron integrals...done
+      Computed 1994949 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+*** tstart() called on mediawiki.tifrh.res.in
+*** at Mon Dec 19 14:59:02 2022
+
+        ==> Transform all two-electron integrals <==
+
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Constructing frozen core operators
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+
+*** tstop() called on mediawiki.tifrh.res.in at Mon Dec 19 14:59:08 2022
+Module time:
+	user time   =       3.61 seconds =       0.06 minutes
+	system time =       1.74 seconds =       0.03 minutes
+	total time  =          6 seconds =       0.10 minutes
+Total time:
+	user time   =      57.91 seconds =       0.97 minutes
+	system time =      11.57 seconds =       0.19 minutes
+	total time  =        135 seconds =       2.25 minutes
+
+*** tstart() called on mediawiki.tifrh.res.in
+*** at Mon Dec 19 14:59:08 2022
+
+
+        **********************************************************
+        *                                                        *
+        *                   CCSD Integral Sort                   *
+        *                                                        *
+        **********************************************************
+
+
+        CC integral sort will use                   1364.67 mb
+
+        Number of (ab|cd) temporary files:                2
+        Number of (ab|ci) temporary files:                3
+        Starting temporary file number:                 270
+
+        Initial sort........done.
+
+        Sort (IJ|KL)........done.
+        Sort (IJ|KA) 1/2....done.
+        Sort (IJ|KA) 2/2....done.
+        Sort (IA|JB)........done.
+        Sort (IJ|AB)........done.
+        Sort (IA|BC) 1/3....done.
+        Sort (IA|BC) 2/3....done.
+        Sort (IA|BC) 3/3....done.
+        Sort (AB|CD) 1/2....done.
+        Sort (AB|CD) 2/2....done.
+
+
+*** tstop() called on mediawiki.tifrh.res.in at Mon Dec 19 14:59:12 2022
+Module time:
+	user time   =       2.64 seconds =       0.04 minutes
+	system time =       1.71 seconds =       0.03 minutes
+	total time  =          4 seconds =       0.07 minutes
+Total time:
+	user time   =      60.55 seconds =       1.01 minutes
+	system time =      13.28 seconds =       0.22 minutes
+	total time  =        139 seconds =       2.32 minutes
+
+*** tstart() called on mediawiki.tifrh.res.in
+*** at Mon Dec 19 14:59:12 2022
+
+
+
+        *******************************************************
+        *                                                     *
+        *                        CISD                         *
+        *      Singles Doubles Configuration Interaction      *
+        *                                                     *
+        *                   Eugene DePrince                   *
+        *                                                     *
+        *******************************************************
+
+
+
+  ==> Input parameters <==
+
+        Freeze core orbitals?                  no
+        Use frozen natural orbitals?           no
+        r_convergence:                  1.000e-07
+        e_convergence:                  1.000e-12
+        Number of DIIS vectors:                 8
+        Number of frozen core orbitals:         0
+        Number of active occupied orbitals:     1
+        Number of active virtual orbitals:    104
+        Number of frozen virtual orbitals:      0
+
+  ==> Memory <==
+
+        available memory =                         200271.61 mb
+        minimum memory requirements for QCISD =         0.42 mb
+        (T) algorithm:                                  0.17 mb (low-memory)
+        memory requirements for QCISD(T) =              0.17 mb
+
+  ==> Define tiling <==
+
+        v(ab,cd) diagrams will be evaluated in   1 blocks.
+        v(ab,ci) diagrams will be evaluated in   1 blocks over ov2.
+        v(ab,ci) diagrams will be evaluated in   1 blocks over ov.
+
+  Allocate cpu memory (   227.86 mb).....done.
+  Initialize cpu memory..................done.
+
+  Begin CISD iterations
+
+   Iter  DIIS          Energy       d(Energy)          |d(T)|     time
+      0   0 1   -0.0264609503   12.0368407727    0.0478453655        0
+      1   1 1   -0.0299695837   -0.0035086334    0.0069839013        0
+      2   2 1   -0.0305752224   -0.0006056387    0.0012590596        1
+      3   3 1   -0.0305937985   -0.0000185761    0.0001034874        0
+      4   4 1   -0.0305939037   -0.0000001052    0.0000085627        0
+      5   5 1   -0.0305939043   -0.0000000006    0.0000010526        0
+      6   6 1   -0.0305939043   -0.0000000000    0.0000001291        1
+      7   7 1   -0.0305939043   -0.0000000000    0.0000000134        0
+
+  CISD iterations converged!
+
+  CISD variational energy:      -0.030593904313
+  CISD transition energy:       -0.030593904347
+
+        OS SCS-MP2 correlation energy:          -0.031753140419
+        SS SCS-MP2 correlation energy:          -0.000000000000
+        SCS-MP2 correlation energy:             -0.031753140419
+      * SCS-MP2 total energy:                   -7.268139471251
+
+        OS MP2 correlation energy:              -0.026460950350
+        SS MP2 correlation energy:              -0.000000000000
+        MP2 correlation energy:                 -0.026460950350
+      * MP2 total energy:                       -7.262847281182
+
+        OS CISD correlation energy:             -0.030593904347
+        SS CISD correlation energy:              0.000000000000
+        CISD correlation energy:                -0.030593904313
+      * CISD total energy:                      -7.266980235145
+
+  Total time for CISD iterations:       0.36 s (user)
+                                        1.05 s (system)
+                                           2 s (total)
+
+  Time per iteration:                   0.05 s (user)
+                                        0.15 s (system)
+                                        0.29 s (total)
+
+*** tstop() called on mediawiki.tifrh.res.in at Mon Dec 19 14:59:14 2022
+Module time:
+	user time   =       0.36 seconds =       0.01 minutes
+	system time =       1.11 seconds =       0.02 minutes
+	total time  =          2 seconds =       0.03 minutes
+Total time:
+	user time   =      60.91 seconds =       1.02 minutes
+	system time =      14.39 seconds =       0.24 minutes
+	total time  =        141 seconds =       2.35 minutes

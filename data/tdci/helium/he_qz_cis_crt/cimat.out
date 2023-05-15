@@ -1,0 +1,74 @@
+nohup: ignoring input
+****
+He     0
+S    1   1.00
+      1.609000D+00           1.000000D+00
+S    7   1.00
+      5.285000D+02           9.400000D-04
+      7.931000D+01           7.214000D-03
+      1.805000D+01           3.597500D-02
+      5.085000D+00           1.277820D-01
+      1.609000D+00           3.084700D-01
+      5.363000D-01           4.530520D-01
+      1.833000D-01           2.388840D-01
+S    1   1.00
+      5.363000D-01           1.000000D+00
+S    1   1.00
+      1.833000D-01           1.000000D+00
+P    1   1.00
+      5.994000D+00           1.000000D+00
+P    1   1.00
+      1.745000D+00           1.000000D+00
+P    1   1.00
+      5.600000D-01           1.000000D+00
+D    1   1.00
+      4.299000D+00           1.000000D+00
+D    1   1.00
+      1.223000D+00           1.000000D+00
+F    1   1.00
+      2.680000D+00           1.0000000
+****
+
+COMPUTING AO ELECTRON REPULSION INTEGRALS
+
+Size of the ERI tensor will be 0.01 Gb
+
+COMPUTING AO ONE ELECTRON INTEGRALS
+
+Ground state SCF Energy : -2.86151480 
+
+Nuclear repulsion energy : 0.00000000 
+
+Total electronic energy : -2.86151480 
+
+ ORBITAL INFORMATION  
+-----------------------
+Basis functions   : 35  
+Molecular orbitals: 35  
+Spin Orbitals     : 70  
+Alpha Orbitals    : 1  
+Beta Orbitals     : 1  
+Occupied Orbitals : 1  
+Virtual Orbitals  : 34  
+
+Begining CISD calculation .....
+
+[1, 34, 0, 0, 0, 0, 0] 35
+Computing CISD Hamiltonian matrix with 8 cores 
+
+Completed generating Hamiltonian matrix of size (35,35) in 0.07 seconds
+
+Completed the task and saved data in 0.07
+
+Calculating Dipoles in CSF basis
+
+Completed generating Dipole matrices in 0.12
+
+Diagonalizing HCISD matrix.....
+
+pyci CISD E0: -2.8615148042847469
+psi4 CISD E0: -2.8615148042847558
+dE : 8.88E-15
+
+Completed Diagonalization task and saved data in 0.01
+

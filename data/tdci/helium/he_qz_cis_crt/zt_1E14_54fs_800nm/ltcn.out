@@ -1,0 +1,8 @@
+Loading matrices .....
+
+Completed loading matrices in 0.005768 seconds.
+
+Traceback (most recent call last):
+  File "/data1/vijay/jcp_helium_paper/hhg/he_qz_cis_crt/zt_1E14_54fs_800nm/../../scripts/integrators/scripts/job_tdci_cpp.py", line 174, in <module>
+    integrators.CrankNicholson.runPropagator(cmplx_vals, eigvecs, psi0,
+ValueError: linear_solve failed with given arguments.

@@ -1,0 +1,45 @@
+nohup: ignoring input
+BASIS: ../data/aug-cc-pvtz.gbs
+COMPUTING AO ELECTRON REPULSION INTEGRALS
+
+Size of the ERI tensor will be 0.00 Gb
+
+COMPUTING AO ONE ELECTRON INTEGRALS
+
+Ground state SCF Energy : -2.86122253 
+
+Nuclear repulsion energy : 0.00000000 
+
+Total electronic energy : -2.86122253 
+
+ ORBITAL INFORMATION  
+-----------------------
+Basis functions   : 25  
+Molecular orbitals: 25  
+Spin Orbitals     : 50  
+Alpha Orbitals    : 1  
+Beta Orbitals     : 1  
+Occupied Orbitals : 1  
+Virtual Orbitals  : 24  
+
+Begining CISD calculation .....
+
+[1, 24, 0, 0, 0, 0, 0] 25
+Computing CISD Hamiltonian matrix with 8 cores 
+
+Completed generating Hamiltonian matrix of size (25,25) in 0.07 seconds
+
+Completed the task and saved data in 0.07
+
+Calculating Dipoles in CSF basis
+
+Completed generating Dipole matrices in 0.16
+
+Diagonalizing HCISD matrix.....
+
+pyci CISD E0: -2.8612225315643509
+psi4 CISD E0: -2.8612225315643518
+dE : 8.88E-16
+
+Completed Diagonalization task and saved data in 0.00
+

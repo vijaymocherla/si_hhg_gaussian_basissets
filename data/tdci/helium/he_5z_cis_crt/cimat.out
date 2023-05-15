@@ -1,0 +1,85 @@
+nohup: ignoring input
+****
+He     0
+S    1   1.00
+      3.566000D+00           1.000000D+00
+S    1   1.00
+      1.240000D+00           1.000000D+00
+S    8   1.00
+      1.145000D+03           3.590000D-04
+      1.717000D+02           2.771000D-03
+      3.907000D+01           1.425100D-02
+      1.104000D+01           5.556600D-02
+      3.566000D+00           1.620910D-01
+      1.240000D+00           3.321970D-01
+      4.473000D-01           4.196150D-01
+      1.640000D-01           1.861280D-01
+S    1   1.00
+      4.473000D-01           1.000000D+00
+S    1   1.00
+      1.640000D-01           1.000000D+00
+P    1   1.00
+      1.015300D+01           1.000000D+00
+P    1   1.00
+      3.627000D+00           1.000000D+00
+P    1   1.00
+      1.296000D+00           1.000000D+00
+P    1   1.00
+      4.630000D-01           1.000000D+00
+D    1   1.00
+      7.666000D+00           1.000000D+00
+D    1   1.00
+      2.647000D+00           1.000000D+00
+D    1   1.00
+      9.140000D-01           1.000000D+00
+F    1   1.00
+      5.411000D+00           1.000000D+00
+F    1   1.00
+      1.707000D+00           1.000000D+00
+G    1   1.00
+      3.430000D+00           1.0000000
+****
+
+COMPUTING AO ELECTRON REPULSION INTEGRALS
+
+Size of the ERI tensor will be 0.19 Gb
+
+COMPUTING AO ONE ELECTRON INTEGRALS
+
+Ground state SCF Energy : -2.86162695 
+
+Nuclear repulsion energy : 0.00000000 
+
+Total electronic energy : -2.86162695 
+
+ ORBITAL INFORMATION  
+-----------------------
+Basis functions   : 70  
+Molecular orbitals: 70  
+Spin Orbitals     : 140  
+Alpha Orbitals    : 1  
+Beta Orbitals     : 1  
+Occupied Orbitals : 1  
+Virtual Orbitals  : 69  
+
+Begining CISD calculation .....
+
+[1, 69, 0, 0, 0, 0, 0] 70
+Computing CISD Hamiltonian matrix with 8 cores 
+
+Completed generating Hamiltonian matrix of size (70,70) in 0.24 seconds
+
+Completed the task and saved data in 0.24
+
+Calculating Dipoles in CSF basis
+
+Completed generating Dipole matrices in 0.15
+
+Diagonalizing HCISD matrix.....
+
+pyci CISD E0: -2.8616269466192774
+psi4 CISD E0: -2.8616269466193018
+dE : 2.44E-14
+
+Completed Diagonalization task and saved data in 0.01
+

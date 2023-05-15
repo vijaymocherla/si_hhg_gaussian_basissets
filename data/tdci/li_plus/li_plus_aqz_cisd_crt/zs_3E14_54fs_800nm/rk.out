@@ -1,0 +1,8 @@
+nohup: ignoring input
+breaking loop
+Loading matrices .....
+
+../hdata.npz
+Completed loading matrices in 1.763262 seconds.
+
+Time taken for RK4 without lifetime models  242353.29 seconds

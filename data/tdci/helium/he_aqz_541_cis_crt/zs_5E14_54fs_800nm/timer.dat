@@ -1,0 +1,28 @@
+
+Host: mediawiki.tifrh.res.in
+
+Timers On : Mon Jan 30 09:40:30 2023
+Timers Off: Mon Jan 30 09:42:09 2023
+
+Wall Time:       99.73 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: mediawiki.tifrh.res.in
+
+Timers On : Mon Jan 30 09:42:10 2023
+Timers Off: Mon Jan 30 09:44:05 2023
+
+Wall Time:      115.73 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************

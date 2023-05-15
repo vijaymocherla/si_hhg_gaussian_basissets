@@ -1,0 +1,7 @@
+nohup: ignoring input
+breaking loop
+Loading matrices .....
+
+Completed loading matrices in 0.087393 seconds.
+
+Time taken for RK4 without lifetime models  13130.20 seconds

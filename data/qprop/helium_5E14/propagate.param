@@ -1,0 +1,73 @@
+# Realtime propagation inputfile
+# -----------------------------
+# values for helium atom
+# I0       E0      Rmax     Rmax/2
+# 2.0E+14, 0.0755, 46.5451  23.3169
+# 3.0E+14, 0.0925, 57.0059  28.5573
+# 5.0E+14, 0.1194, 73.5943  36.8673
+# Initial wavefunction is taken from a file with this name 
+# ( default name by imag.propagation is "./dat/imag_prop_0_wf_fin.dat" )
+   init-wf-filename string ./dat/imag_prop_0_wf_fin.dat
+
+# Here just radial axis parameter
+# The radial axis length: Rmax = R-tsurff + E0/omega + imag-width
+   R-tsurff double       36.8673
+
+# Amplitude of the imaginary potential
+   imag-ampl double      100.0
+
+# Width of the imaginary potential
+   imag-width double     150.0
+
+# Manolopoulos potential parameters
+   imag-man-k double       0.2
+   imag-man-delta double   0.2
+
+# Number of angular momenta in the corresponding expansion
+   ell-grid-size long    50
+
+# Maximum amplitudes of the electric field components
+# X-axis component if polarization in the XY-plane is used
+# Z-axis component if polarization in the   Z-axis is used
+   max-electric-field-1-x double      0.0
+   max-electric-field-2-x double      0.1194
+# Y-axis component if polarization in the XY-plane is used
+# Ignored          if polarization in the   Z-axis is used
+   max-electric-field-1-y double      0.0
+   max-electric-field-2-y double      0.0
+
+# Main frequencies of the laser beam components
+# Should not be set equal zero
+   omega-1 double      0.05695
+   omega-2 double      0.05695
+
+# Number of cycles of the main frequencies omega1,2
+   num-cycles-1 double   0.0
+   num-cycles-2 double   20.0
+
+# Carrier-envelope phases of each color and component in radians
+   phase-1-x double 0.0
+   phase-2-x double 0.0
+   phase-1-y double 0.0
+   phase-2-y double 0.0
+
+# Delay between the pulses (in atomic units)
+   tau-delay double 00.00
+   
+# Time step for propagation; delta-r/4 is a sensible choice
+   delta-t double       0.00413414
+
+# Additional time after the laser pulse is over
+   additional-time double 550.0
+
+# Save the full w.f. and/or observables after each such number of timesteps
+# Set 0 if no intermediate saving is required
+   wf-saving-interval    long 0
+   obser-saving-interval long 20
+
+# Turned off in this example. Keep equal 0
+   generate-tsurff-data long 0
+
+# If HHG data is nesessary, set this trigger equal 1.
+# If not, set equal 0.
+   generate-hhg-data long 1

@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file",
+            "pattern": "simulating_hhg_with_gaussian_basis_sets/paper.tex"
+        }
+    ]
+}

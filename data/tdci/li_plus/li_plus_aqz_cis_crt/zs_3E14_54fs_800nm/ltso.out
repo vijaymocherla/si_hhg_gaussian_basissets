@@ -1,0 +1,7 @@
+../../scripts/job_tdci_ltso.py:61: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  SplitOperator(cmplx_vals, eigvecs, psi0, time_params,
+Loading matrices .....
+
+Completed loading matrices in 0.007613 seconds.
+
+Time taken 133.234 seconds

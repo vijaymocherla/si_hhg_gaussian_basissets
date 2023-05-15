@@ -1,0 +1,30 @@
+# A trigger to switch between different forms of initial condition for imaginary time propagation. 
+# By default 1 initializes random function. Custom forms can be defined in /base/wavefunction.cc in void wavefunction::init(...)
+   init-type long 1
+
+# Coefficient Z in the Coulomb potential -Z/r. Can be tuned to reproduce correct ionization potential,
+# Also usefull if Rco (pot-cutoff) is chosen (very) small to reproduce a short range potential
+   nuclear-charge double 1.0
+
+# Rco = length at which the true Coulomb potential is turned to linear tending to zero 
+   pot-cutoff double 1000000.0
+
+# Grid step in the radial axes
+   delta-r double 0.1
+
+# Radial grid size in atomic units
+   radial-grid-size double 100.0
+
+# Number of angular momenta in the expansion of an initial state (1 for a 1s hydrogenic state)
+   ell-grid-size long 1
+
+# 34 for a linear polarization, 44 for a polarization in the XY plane
+   qprop-dim long 34
+
+# l and m of an initial state. l=0 and m=0 for a 1s state
+   initial-nr  long 0
+   initial-ell long 0
+   initial-m   long 0
+
+# Number of imaginary timesteps
+   im-time-steps long 12000

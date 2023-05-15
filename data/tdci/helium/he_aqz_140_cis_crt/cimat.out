@@ -1,0 +1,43 @@
+COMPUTING AO ELECTRON REPULSION INTEGRALS
+
+Size of the ERI tensor will be 0.52 Gb
+
+COMPUTING AO ONE ELECTRON INTEGRALS
+
+Ground state SCF Energy : -2.86154184 
+
+Nuclear repulsion energy : 0.00000000 
+
+Total electronic energy : -2.86154184 
+
+ ORBITAL INFORMATION  
+-----------------------
+Basis functions   : 90  
+Molecular orbitals: 90  
+Spin Orbitals     : 180  
+Alpha Orbitals    : 1  
+Beta Orbitals     : 1  
+Occupied Orbitals : 1  
+Virtual Orbitals  : 89  
+
+Begining CISD calculation .....
+
+[1, 89, 0, 0, 0, 0, 0] 90
+Computing CISD Hamiltonian matrix with 11 cores 
+
+Completed generating Hamiltonian matrix of size (90,90) in 0.75 seconds
+
+Completed the task and saved data in 0.75
+
+Calculating Dipoles in CSF basis
+
+Completed generating Dipole matrices in 0.24
+
+Diagonalizing HCISD matrix.....
+
+pyci CIS E0: -2.8615418358701299
+psi4 CIS E0: -2.8615418358703097
+dE : 1.80E-13
+
+Completed Diagonalization task and saved data in 0.01
+
