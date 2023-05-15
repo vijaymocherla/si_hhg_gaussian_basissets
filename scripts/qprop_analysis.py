@@ -37,7 +37,7 @@ def read_spectra(filename, params=(0.0569, 20, 400)):
 
 def plot_sae(sae_path, tdci_path, tdci_job, basis, text_pos=[0.75, 0.7], legend_pos=[0.75, 0.87],
             xlim = [-.10,90], ylim = [-20,-0], figsize=[7.2, 6], 
-            savefig=True, return_data=False,
+            savefig=True, return_data=False, fontsize=19,
             plot_label='qprop', imgtype='pdf'):
     # filename = sae_path+'real_prop_obser.dat'
     (time_fs, energy, autocorr, norm, dpz, acc_real, acc_imag) = get_qprop_data(sae_path)
@@ -48,7 +48,6 @@ def plot_sae(sae_path, tdci_path, tdci_job, basis, text_pos=[0.75, 0.7], legend_
     freq_tdci, hhg_tdci = tdci_data['lt_rk4_tdprop.txt']['ho'], tdci_data['lt_rk4_tdprop.txt']['hhg_vel']
     data_info = tdci_data['info']
     fig, ax = plt.subplots(figsize=figsize)
-    fontsize=14
     atom = data_info['atom']
     w0 = data_info['w0']
     ip = data_info['ip']

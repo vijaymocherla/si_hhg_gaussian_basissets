@@ -8,7 +8,7 @@ mpl.rc('figure', facecolor='white')
 mpl.rc('savefig', facecolor='none')
 mpl.rc('text', usetex=True)
 mpl.rc('font', family='sans-serif', serif='Sans')
-mpl.rc('font', size=12)
+mpl.rc('font', size=18)
 import matplotlib.pyplot as plt
 from matplotlib import ticker, cm
 from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)

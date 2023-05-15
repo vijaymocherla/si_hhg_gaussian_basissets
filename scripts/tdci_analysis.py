@@ -222,7 +222,7 @@ def plot_data(mol, run, xlim=[0,120], ylim=[], savefig=False, method='rk4'):
 
 def plot_hhg_pulse_comp(datadir, pulses, basis, 
                         method='rk4', xlim=[-0.2,60], ylim=[-18,-2], legend_pos=[0.65, 0.79],
-                        savefig=True, imgtype='pdf', figsize=(22, 7), fontsize=18, return_data=False):
+                        savefig=True, imgtype='pdf', figsize=(22, 7), fontsize=19, return_data=False):
     """Plots and compares the HHG spectra of different pulse-envelope shapes.
     """
     job = datadir.split('/')[-1]
@@ -279,7 +279,7 @@ def plot_hhg_pulse_comp(datadir, pulses, basis,
         ax.text(0.710, 0.9, ('$\cdots\cdots$ \ $I_p$ \ \ \  : {ionp: 3.4f} E$_h$ \n'+
             '$--$ \ E$_\mathbf{cut}$ : {e_cutoff:3.4f} E$_h$\n').format(cut='{cut}',ionp=ip, e_cutoff=e_cutoff),
             horizontalalignment='center', verticalalignment='center', transform = ax.transAxes, fontsize=fontsize-3)
-        ax.legend(bbox_to_anchor=legend_pos, loc='center', ncol=1, fontsize=fontsize-3, facecolor='white')
+        ax.legend(bbox_to_anchor=legend_pos, loc='center', ncol=1, fontsize=fontsize-3.5, facecolor='white')
     plt.suptitle('Helium HHG plots for I$_0$ =   {I:} W/cm$^2$'.format(I=intensity), fontsize=fontsize+4)
     fig.tight_layout()
     if savefig:
@@ -291,7 +291,7 @@ def plot_hhg_pulse_comp(datadir, pulses, basis,
 
 def plot_hhg_basis_comp(basissets, pulse, label, 
                         atom_dir='helium', method='rk4', use_lifetime=True, 
-                        xlim = [-0.2, 100], ylim = [-28,24], figsize=[7.2,6], fontsize=18,
+                        xlim = [-0.2, 100], ylim = [-28,24], figsize=[7.2,6], fontsize=20,
                         savefig=True, imgtype='pdf', 
                         legend_pos=[0.8, 0.5], return_data=False):
     """Plots and compares the HHG spectra of different basissets.
@@ -347,7 +347,7 @@ def plot_hhg_basis_comp(basissets, pulse, label,
 
 
 def plot_comp_lifetimes(jobs, pulse, labels, atom_dir='helium', method='rk4', 
-                        xlim=[-0.2,25], ylim=[-24,6], figsize=(7.64,6.4), fontsize=18,
+                        xlim=[-0.2,25], ylim=[-24,6], figsize=(7.64,6.4), fontsize=20,
                         savefig=True, imgtype='pdf', 
                         plot_label='lifetime', colors= ['crimson','darkblue'], 
                         subcolors = ['orange','orchid'], legend_pos=[0.78,.75],

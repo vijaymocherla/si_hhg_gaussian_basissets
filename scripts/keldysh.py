@@ -61,7 +61,7 @@ def keldysh(intensity, wavelength_nm, atom):
         'Rmax':Rmax,}
     return data_dict
 
-def plot_keldysh(atom, I_lim=[1e9, 5e14], wln_lim=[400,2300],title='', plotname='', savefig=True, imgtype='pdf', fontsize=18):
+def plot_keldysh(atom, I_lim=[1e9, 5e14], wln_lim=[400,2300],title='', plotname='', savefig=True, imgtype='pdf', fontsize=19):
     Imin, Imax = I_lim
     wln_min, wln_max = wln_lim 
     I = np.logspace(np.log10(Imin), np.log10(Imax), 1000, endpoint=True)
