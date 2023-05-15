@@ -74,6 +74,7 @@ def plot_sae(sae_path, tdci_path, tdci_job, basis, text_pos=[0.75, 0.7], legend_
             verticalalignment='center',
             transform = ax.transAxes, fontsize=fontsize)
     ax.legend(bbox_to_anchor=legend_pos, loc='center', ncol=1, fontsize=fontsize-2, facecolor='white')
+    fig.tight_layout()
     if savefig:
         filename = '{path2images}{atom}_{label}_{intensity}_hhg_comp.{imgtype}'.format(path2images=_path2images,atom=atom, label=plot_label, intensity=intensity,imgtype=imgtype)
         plt.savefig(filename, dpi=1000, format=imgtype)
