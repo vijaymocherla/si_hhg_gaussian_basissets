@@ -97,8 +97,9 @@ def plot_hhg_comp(spectrum_file, tdci_data,  sfa_params=[0.0569, 20, 400],
     if savefig:
         filename = '{path2images}{atom}_{intensity}_sfa_comp_hhg.{imgtype}'.format(path2images=_path2images,atom=atom, intensity=intensity,imgtype=imgtype)
         plt.savefig(filename, dpi=1000, format=imgtype)
+    data = {'freq': freq,  'hhg_spectra': spectra, }
     if return_data:
-        return fig, ax
+        return data, fig, ax
 
 def plot_rbsfa_comp(dipole_file, spectrum_file, info,
                     atom_title='',
@@ -106,7 +107,7 @@ def plot_rbsfa_comp(dipole_file, spectrum_file, info,
                     xlim=[0, 80], ylim=[-25, 3],
                 ):
     w0, n, npc = params
-    freq_dip, Glist = get_hhg_spectra(dipole_file, params)
+    freq_dip, Glist = get_sfa_hhg_spectra(dipole_file, params)
     freq, spectra = read_spectra(spectrum_file, params)
     fig, ax = plt.subplots()
     ax.plot(freq_dip/w0, np.log10(Glist[0]), label='norm$^2$ FT of $\mathbf{makeDipoleList()}$')
@@ -131,4 +132,6 @@ def plot_rbsfa_comp(dipole_file, spectrum_file, info,
         transform = ax.transAxes, fontsize=11)
     plt.legend(bbox_to_anchor=[0.7, 0.90], loc='center',fontsize=11)
     fig.tight_layout()
-    return freq, freq_dip, spectra, Glist[0]    
+    data = {'freq': freq, 'freq_dip': freq_dip, 'hhg_spectra': spectra, 
+            'hhg_dip': Glist[0], 'hhg_vel': Glist[1], 'hhg_acc': Glist[2]}
+    return data, fig, ax    
