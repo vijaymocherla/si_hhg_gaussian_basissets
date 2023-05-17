@@ -50,16 +50,16 @@ def plot_sae(sae_path, tdci_path, tdci_job, basis, text_pos=[0.75, 0.7], legend_
     hhg_qprop = [glist[1][i] for i in range(len(glist[1]))]
     # hhg_qprop = [1/freq[i]**2 * glist[0][i] for i in range(len(glist[1]))]
     tdci_data = get_tdci_data(tdci_path, tdci_job)
-    freq_tdci, hhg_tdci = tdci_data['lt_rk4_tdprop.txt']['ho'], tdci_data['lt_rk4_tdprop.txt']['hhg_vel']
     data_info = tdci_data['info']
-    fig, ax = plt.subplots(figsize=figsize)
     atom = data_info['atom']
     w0 = data_info['w0']
     ip = data_info['ip']
     intensity = data_info['intensity']
     ecut = data_info['e_cutoff']
-    ax.plot(freq_tdci, np.log10(hhg_tdci), label='TD-CIS/{basis}'.format(basis=basis), linewidth=1.0)
-    ax.plot(freq/w0, np.log10(hhg_qprop), label='SAE', linewidth=1.75, alpha=0.65)
+    freq_tdci, hhg_tdci = tdci_data['lt_rk4_tdprop.txt']['ho']*w0, tdci_data['lt_rk4_tdprop.txt']['hhg_vel']
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.plot(freq_tdci/w0, np.log10(hhg_tdci), label='TD-CIS/{basis}'.format(basis=basis), linewidth=1.15, alpha=1.0, color='royalblue')
+    ax.plot(freq/w0, np.log10(hhg_qprop), label='SAE', linewidth=1.85, alpha=0.65, color='darkorange')
     ax.set_xlim(*xlim)
     ax.set_ylim(*ylim)
     ax.set_xlabel('Harmonic orders \ ($ N=\omega / \omega_{0} $)', fontsize=fontsize+4)

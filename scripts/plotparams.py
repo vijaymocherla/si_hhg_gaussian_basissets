@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 #
+# Author : Sai Vijay Mocherla <vijaysai.mocherla@gmail.com>
 #
-# tweaking matplotlib 
 import matplotlib as mpl
+# tweaking matplotlib 
 mpl.rc('axes', facecolor='none')
 mpl.rc('figure', facecolor='white')
 mpl.rc('savefig', facecolor='none')
