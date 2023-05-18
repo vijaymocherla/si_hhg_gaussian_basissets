@@ -51,7 +51,7 @@ def get_sfa_hhg_spectra(filename, params=(0.0569, 20, 500)):
     freq, *Glist = calc_Gobs(time_fs, dpz, return_moments=True, dt_fs=(dt/fs_to_au))
     return freq, Glist
 
-def plot_hhg_comp(spectrum_file, tdci_data,  sfa_params=[0.0569, 20, 400],  
+def plot_hhg_sfa_comp(spectrum_file, tdci_data,  sfa_params=[0.0569, 20, 400],  
                  colors=['orangered','green', 'blue'], 
                   figsize=[8.19,6.8], xlim=[-.05, 80], ylim=[-21,2], 
                   fontsize=20, linewidths=[1.25, 1.25, 0.95],
