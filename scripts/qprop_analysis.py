@@ -83,6 +83,6 @@ def plot_sae(sae_path, tdci_path, tdci_job, basis, text_pos=[0.75, 0.7], legend_
     if savefig:
         filename = '{path2images}{atom}_{label}_{intensity}_hhg_comp.{imgtype}'.format(path2images=_path2images,atom=atom, label=plot_label, intensity=intensity,imgtype=imgtype)
         plt.savefig(filename, dpi=1000, format=imgtype)
-    data = {'freq': freq, 'hhg': hhg_qprop, 'time_fs': time_fs, 'dipole':dpz}
+    data = {'freq': freq, 'hhg': hhg_qprop, 'time_fs': time_fs, 'dipole':dpz, 'norm':norm, 'autocorr':autocorr, 'acc_real':acc_real, 'acc_imag':acc_imag}
     if return_data:
         return data, fig, ax

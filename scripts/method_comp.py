@@ -32,9 +32,9 @@ def plot_hhg_method_comp(sae_path, tdci_path, tdci_job, spectrum_file,
     # freq_sfa, Glist_sfa = get_sfa_hhg_spectra(dipole_file, params)
     freq_sfa, hhg_sfa = read_spectra(spectrum_file, params)
     fig, ax = plt.subplots(figsize=figsize)
-    ax.plot(freq_sfa/w0, np.log10(hhg_sfa)+0, label='SFA', alpha=0.75, linewidth=1.50, color='darkred')
-    ax.plot(freq_sae/w0, np.log10(Glist_sae[0])+10, label='SAE', alpha=1.0, linewidth=1.2, color='darkorange')
-    ax.plot(freq_tdci/w0, np.log10(Glist_tdci[0])+20, label='TD-CIS/aQZ+(4,4,0)', alpha=.65, linewidth=1.10, color='darkgreen')
+    ax.plot(freq_tdci/w0, np.log10(Glist_tdci[1])+20, label='TD-CIS/aQZ+(4,4,0)', alpha=1.0, linewidth=1.25, color='green')
+    ax.plot(freq_sae/w0, np.log10(Glist_sae[1])+10, label='SAE', alpha=0.85, linewidth=1.5, color='darkorange')
+    ax.plot(freq_sfa/w0, np.log10(hhg_sfa)+0, label='SFA', alpha=1.0, linewidth=1.50, color='darkred')
     ax.set_xlim(*xlim)
     ax.set_ylim(*ylim)
     ax.axvline(ip/w0, color='grey', linestyle='dotted', linewidth=1.0)
@@ -44,7 +44,7 @@ def plot_hhg_method_comp(sae_path, tdci_path, tdci_job, spectrum_file,
                 horizontalalignment='center',
                 verticalalignment='center',
                 transform = ax.transAxes, fontsize=fontsize-2)
-    ax.legend(bbox_to_anchor=legend_pos, loc='center', ncol=1, fontsize=fontsize-2, facecolor='white')
+    ax.legend(bbox_to_anchor=legend_pos, loc='center', ncol=1, fontsize=fontsize-3, facecolor='white')
     ax.set_xlabel('Harmonic orders \ ($ N=\omega / \omega_{0} $)', fontsize=fontsize+4)
     ax.set_ylabel('$\log_{10}$(I$_{\mathbf{HHG}}$) ', fontsize=fontsize+4)
     ax.xaxis.set_minor_locator(AutoMinorLocator())
