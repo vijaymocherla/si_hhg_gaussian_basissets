@@ -331,7 +331,7 @@ def plot_hhg_basis_comp(basissets, pulse, label,
     ax.tick_params(axis='both', labelsize=fontsize+2)
     ax.set_xlabel('Harmonic orders \ ($ N=\omega / \omega_{0} $)', fontsize=fontsize+4)
     ax.set_ylabel('$\log_{10}$(I$_{\mathbf{HHG}}$) ',fontsize=fontsize+4)
-    # ax.set_title('I$_0$ =   {I:} W/cm$^2$'.format(I=intensity), fontsize=fontsize+4)
+    ax.set_title('I$_0$ =   {I:} W/cm$^2$'.format(I=intensity), fontsize=fontsize+4)
     ax.text(0.75, 0.85, ('$\cdots\cdots$ \ $I_p$ \ \ \  : {ionp: 3.4f} E$_h$ \n'+
         '$--$ \ E$_\mathbf{cut}$ : {e_cutoff:3.4f} E$_h$\n').format(cut='{cut}',ionp=ip, e_cutoff=e_cutoff),
         horizontalalignment='center', verticalalignment='center', transform = ax.transAxes, fontsize=fontsize-1)
@@ -383,7 +383,7 @@ def plot_comp_lifetimes(jobs, pulse, labels, atom_dir='helium', method='rk4',
     ax.tick_params(axis='both', labelsize=fontsize+2)
     ax.set_xlabel('Harmonic orders \ ($ N=\omega / \omega_{0} $)', fontsize=fontsize+4)
     ax.set_ylabel('$\log_{10}$(I$_{\mathbf{HHG}}$) ', fontsize=fontsize+4)
-    # ax.set_title('I$_0$ = {I:} W/cm$^2$'.format(I=intensity), fontsize=fontsize+4)
+    ax.set_title('I$_0$ = {I:} W/cm$^2$'.format(I=intensity), fontsize=fontsize+4)
     ax.text(0.7, 0.9, ('$\cdots\cdots$ \ $I_p$ \ \ \  : {ionp: 3.4f} E$_h$ \n'+
         '$--$ \ E$_\mathbf{cut}$ : {e_cutoff:3.4f} E$_h$\n').format(cut='{cut}',ionp=ip, e_cutoff=e_cutoff),
         horizontalalignment='center', verticalalignment='center', transform = ax.transAxes, fontsize=fontsize-1)
