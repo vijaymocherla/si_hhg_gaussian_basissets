@@ -11,7 +11,7 @@ fs_to_au=41.341374575751
 from plotparams import *
 
 # Some constant internal varaibles
-_path2images='../simulating_hhg_with_gaussian_basis_sets/images/'
+_path2images='../plots/'
 
 ip = {
     'H-'   :  0.02771614, #   0.754195 eV (Source: Lykke et. al. (1991). Phys. Rev. A, 43(11), 6104.

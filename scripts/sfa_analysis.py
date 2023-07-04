@@ -7,7 +7,7 @@ from hhg_analysis import *
 from plotparams import *
 
 # Some constant internal varaibles
-_path2images='../simulating_hhg_with_gaussian_basis_sets/images/'
+_path2images='../plots/'
 
 def read_dipole(filename):
     dipoles = []

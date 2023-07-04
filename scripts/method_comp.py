@@ -9,8 +9,7 @@ from qprop_analysis import *
 from plotparams import *
 
 # Some constant internal varaibles
-_path2images='../simulating_hhg_with_gaussian_basis_sets/images/'
-
+_path2images='../plots/'
 def plot_hhg_method_comp(sae_path, tdci_path, tdci_job, spectrum_file,
                         params = [0.0569, 20, 400],
                         xlim = [0.1, 90], ylim = [-18,20],

@@ -16,4 +16,4 @@ from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 
 # Some constant internal varaibles
-_path2images='../simulating_hhg_with_gaussian_basis_sets/images/'
+_path2images='../plots/'

@@ -8,7 +8,7 @@ from tdci_analysis import get_tdci_data
 from plotparams import *
 
 # Some constant internal varaibles
-_path2images='../simulating_hhg_with_gaussian_basis_sets/images/'
+_path2images='../plots/'
 
 def get_qprop_data(path2file):
     filename = 'real_prop_obser.dat'
